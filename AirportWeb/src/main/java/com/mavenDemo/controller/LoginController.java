@@ -28,20 +28,21 @@ public class LoginController {
 
 	@RequestMapping("/login")
 	public String showLogin(Map<String, Object> map) throws InterruptedException {
-		System.out.println("Login page");
-		// System.out.println(System.currentTimeMillis());
-		map.put("loginData", new UserDTO());
+		System.out.println("++++++++Login page++++++++");
+ 		map.put("loginData", new UserDTO());
 		UserDTO userDto = new UserDTO();
+		System.out.println("++++++++Login page return++++++++");
 		return "login";
 	}
 
 	@RequestMapping(value = "/verifyLogin", method = RequestMethod.POST)
-	public String signInAction(@ModelAttribute("loginData") UserDTO userDto, HttpServletRequest request, HttpServletResponse response) {
+	public String signInAction(@ModelAttribute("loginData") UserDTO userDto, HttpServletRequest request,
+			HttpServletResponse response) {
 
 		System.out.println("Inside loginController");
 		System.out.println(userDto.getEmailId());
 		System.out.println(userDto.getPassword());
-		
+
 		List<UserDTO> u = loginService.userSignIn(userDto);
 		if (u != null) {
 
