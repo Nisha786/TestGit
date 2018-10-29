@@ -17,7 +17,6 @@ public class LoginRepository {
 
 	public List<UserDTO> userSignIn(String emailId, String password) {
 
-		System.out.println("inside Login repository");
 		if (emailId != null && password != null) {
 
 			@SuppressWarnings("unchecked")
