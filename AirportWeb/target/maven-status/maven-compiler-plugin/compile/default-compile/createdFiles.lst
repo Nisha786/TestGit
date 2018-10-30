@@ -1,9 +1,0 @@
-com\mavenDemo\controller\Logout.class
-com\mavenDemo\controller\ProductController.class
-com\mavenDemo\validator\RegistrationValidator.class
-com\mavenDemo\interceptor\TimeInterceptor.class
-com\mavenDemo\controller\RegistrationController.class
-com\mavenDemo\controller\LoginController.class
-com\mavenDemo\controller\WelcomeController.class
-com\mavenDemo\interceptor\EmailInterceptor.class
-com\mavenDemo\interceptor\SessionInterceptor.class
