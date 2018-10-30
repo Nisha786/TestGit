@@ -32,7 +32,7 @@ public class LoginController {
  		map.put("loginData", new UserDTO());
 		UserDTO userDto = new UserDTO();
 		System.out.println("++++++++Login page return++++++++");
-		System.out.println("++++++++SOP is added by Tarun Sagarji++++++++");
+		
 		System.out.println("++++++++SOP is added by Nirmala Deviji++++++++");
 		System.out.println("++++++++SOP is added by Rahul ++++++++");
 
